@@ -34,8 +34,8 @@ def monobit_test(sequence):
     p_value = math.erfc(s_obs / math.sqrt(2))
     return p_value
 
+# b) Тест на одинаковые подряд идущие биты
 def runs_test(sequence):
-    """ Тест на одинаковые подряд идущие биты """
     N = len(sequence)
     
     if N == 0:
@@ -71,7 +71,6 @@ def runs_test(sequence):
 
 # c) Тест на самую длинную последовательность единиц в блоке
 def longest_run_ones_test(sequence):
-    """ Тест на самую длинную последовательность единиц в блоке. """
     n_total = len(sequence)
     M = 8
     
