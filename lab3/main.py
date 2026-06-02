@@ -31,6 +31,9 @@ def main():
     except ValueError as e:
         print(f"[ERROR] Ошибка данных: {e}", file=sys.stderr)
         sys.exit(1)
+    except PermissionError as e:
+        print(f"\n[ERROR] Ошибка доступа: {e}", file=sys.stderr)
+        sys.exit(1)
     except Exception as e:
         print(f"[CRITICAL] Неожиданная ошибка: {e}", file=sys.stderr)
         sys.exit(1)
