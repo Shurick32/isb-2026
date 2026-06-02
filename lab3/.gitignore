@@ -1,11 +1,6 @@
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-env/
-venv/
-key/
-data/
-settings.json 
+*.pem
+*.enc
+*.txt
+*.bin
+!requirements.txt
+__pycache__
